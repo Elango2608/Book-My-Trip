@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>BookMyTrip</title>
+
+    <style>
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+    <header>
+        <div class="top">
+            <div class="logo"><img src="assets/logo.jpeg" alt="" width="200" height="125"></div>
+            <p> <i class="fas fas fa-phone"></i>24/7 Support<br>+91 (44) 1234 5678</p>
+        </div>
+
+        <nav>
+            <select name="hotels" id="hotel">
+            <option value="">Hotels</option>
+            <option value="hotels in india">Hotels in India</option>
+            <option value="international hotels">International Hotels</option>
+            <option value="international hostels">International Hostels</option>
+            <option value="popular hotels in asia">Popular Hotels in Asia</option>
+            <option value="popular hotels in europe">Popular Hotels in Europe</option>
+            <option value="activities">Activities</option>
+            <option value="hotel dels of the week">Hotel Deals of the Week</option>
+            </select>
+            <a href="#">Flights</a>
+            <a href="#">Vacations</a>
+            <a href="#">Hot Deals</a>
+            <a href="#">Travel Guides</a>
+        </nav>
+    </header>
+
+    <div class="img_content">
+        <div class="hotel_info">
+            <h2>Paris Hilton Hotel</h2>
+            <p>Enjoy a wonderful holiday with luxury rooms, beautiful views and excellent service.</p>
+            <p><strong>₹114,000</strong> Inclusive of food and dinner</p>
+        </div>
+
+        <div class="booking">
+            <h3>Book Your Trip</h3>
+
+            <form id="bookingForm">
+                <div class="form">
+                    <div>
+                        <label for="hotel">Hotel</label>
+                        <select id="hotel" required>
+                            <option value="">Select Hotel</option>
+                            <option>Hotel Taj Mahal Palace</option>
+                            <option>Mont Blanc</option>
+                            <option>Hotel Marriott</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="location">Location</label>
+                        <select id="location" required>
+                            <option value="">Select Location</option>
+                            <option>Mumbai, India</option>
+                            <option>Zurich, Switzerland</option>
+                            <option>Melbourne, Australia</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="checkin">Check-in</label>
+                        <input type="date" id="checkin" required>
+                    </div>
+
+                    <div>
+                        <label for="checkout">Check-out</label>
+                        <input type="date" id="checkout" required>
+                    </div>
+
+                    <div>
+                        <label for="rooms">Rooms</label>
+                        <select id="rooms">
+                            <option>1 Room</option>
+                            <option>2 Rooms</option>
+                            <option>3 Rooms</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="adults">Adults</label>
+                        <select id="adults">
+                            <option>1 Adult</option>
+                            <option>2 Adults</option>
+                            <option>3 Adults</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="children">Children</label>
+                        <select id="children">
+                            <option>0 Children</option>
+                            <option>1 Child</option>
+                            <option>2 Children</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Search</label>
+                        <button type="submit">SEARCH</button>
+                    </div>
+                </div>
+            </form>
+
+            <p class="message" id="message"></p>
+        </div>
+    </div>
+
+    <main>
+        <section id="hotels">
+            <h2>Popular Hotels</h2>
+
+            <div class="hotels">
+                <div class="card">
+                    <img src="assets/images1.jpg" alt="Taj hotel">
+                    <div class="details">
+                        <h3>Hotel Taj Mahal Palace</h3>
+                        <p>Mumbai, India</p>
+                        <span class="price">₹191,000</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/images2.jpg" alt="Mont Blanc hotel">
+                    <div class="details">
+                        <h3>Mont Blanc</h3>
+                        <p>Zurich, Switzerland</p>
+                        <span class="price">₹305,824</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/images3.jpg" alt="Marriott hotel">
+                    <div class="details">
+                        <h3>Hotel Marriott</h3>
+                        <p>Melbourne, Australia</p>
+                        <span class="price">₹114,000</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="deals">
+            <h2>Hot Deals</h2>
+
+            <div class="deals">
+                <div class="deal">
+                    <img src="assets/images2.jpg" alt="Paris holiday">
+                    <h3>PARIS EUROSTAR BREAKS</h3>
+                </div>
+
+                <div class="deal">
+                    <img src="assets/images3.jpg" alt="Island holiday">
+                    <h3>TROPICAL ISLAND ESCAPES</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Latest Blogs</h2>
+            <div class="blog">
+                Best places to visit in India
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Company</h3>
+                <a href="#hotels">About Us</a>
+                <a href="#blog">Privacy Policy</a>
+                <a href="#blog">Terms and Conditions</a>
+            </div>
+
+            <div>
+                <h3>Customer Support</h3>
+                <a href="mailto:support@example.com">Contact Us</a>
+                <a href="#blog">FAQ</a>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>YouTube</p>
+            </div>
+
+            <div>
+                <h3>Deals and Offers</h3>
+                <form id="subscribeForm">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+                <p id="subscribeMessage"></p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="trip.js">
+       
+    </script>
+
+</body>
+</html>
