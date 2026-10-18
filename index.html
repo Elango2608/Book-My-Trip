@@ -1,228 +1,232 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BookMyTrip Holidays</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyTrip - Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ===== Header ===== -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <img src="assets/logo.jpeg" alt="BookMyTrip Holidays" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-        <span class="logo-text" style="display:none;">BookMyTrip <span>Holidays</span></span>
-      </a>
-
-      <div class="header-contact">
-        <p><i class="fa fa-phone"></i> +91 (44) 1234 5678</p>
-        <p><i class="fa fa-envelope"></i> info@bookmytripholidays.com</p>
-        <p><i class="fa fa-globe"></i> www.bookmytripholidays.com</p>
-      </div>
-
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ===== Navigation ===== -->
-  <nav class="main-nav" id="mainNav">
-    <ul class="nav-list">
-      <li class="nav-item has-dropdown">
-        <a href="#" class="nav-link">Hotels <i class="fa fa-angle-down"></i></a>
-        <ul class="dropdown">
-          <li><a href="#" class="dropdown-item active"><i class="fa fa-check"></i> Hotels</a></li>
-          <li><a href="#" class="dropdown-item"><i class="fa fa-inbox"></i> Hotels in India</a></li>
-          <li><a href="#" class="dropdown-item"><i class="fa fa-inbox"></i> International Hotels</a></li>
-          <li><a href="#" class="dropdown-item"><i class="fa fa-inbox"></i> International Hostels</a></li>
-          <li><a href="#" class="dropdown-item"><i class="fa fa-inbox"></i> Popular Hotels in Asia</a></li>
-          <li><a href="#" class="dropdown-item"><i class="fa fa-inbox"></i> Popular Hotels in Europe</a></li>
-          <li><a href="#" class="dropdown-item"><i class="fa fa-inbox"></i> Activities</a></li>
-          <li><a href="#" class="dropdown-item"><i class="fa fa-inbox"></i> Hotel Deals of the Week</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a href="#" class="nav-link">Flights</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Vacations</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Hot Deals</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Travel Guides</a></li>
-    </ul>
-  </nav>
-
-  <!-- ===== Hero Carousel ===== -->
-  <section class="hero-carousel" id="heroCarousel">
-    <div class="carousel-inner">
-      <div class="carousel-slide active">
-        <img src="assets/Paris Hilton Hotel.webp" alt="Paris Hilton Hotel" />
-        <div class="carousel-caption">
-          <h2>Paris Hilton Hotel</h2>
-          <p>Enjoy a wonderful holiday with luxury rooms, beautiful views and excellent service.</p>
-          <span class="caption-price">₹114,000</span>
-          <span class="caption-note">Inclusive of food and dinner</span>
+    <header class="header">
+        <div class="topbar container">
+            <a href="#" class="logo">bookmy<span>trip.</span></a>
+            <div class="contact">
+                <strong>☎ Call 24/7 Support</strong>
+                <span>+91 (44) 1234 4567</span>
+            </div>
+            <div class="quick-search">
+                <input type="search" placeholder="Search entire website here">
+                <button aria-label="Search">⌕</button>
+            </div>
         </div>
-      </div>
-      <div class="carousel-slide">
-        <img src="assets/Maldives Coral Reef Resort.jpg" alt="Maldives Coral Reef Resort" />
-        <div class="carousel-caption">
-          <h2>Maldives Coral Reef Resort</h2>
-          <p>Experience crystal-clear waters and overwater villa luxury.</p>
-          <span class="caption-price">₹249,999</span>
-          <span class="caption-note">All-inclusive · 5 nights</span>
+
+        <nav class="navbar">
+            <div class="container nav-inner">
+                <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+                <ul class="nav-links" id="navLinks">
+                    <li class="dropdown">
+                        <a href="#hotels">Hotels</a>
+                        <div class="dropdown-menu">
+                            <a href="#hotels">Hotels in India</a>
+                            <a href="#hotels">International Hotels</a>
+                            <a href="#hotels">Luxury Hotels</a>
+                            <a href="#hotels">Popular Hotels in Asia</a>
+                            <a href="#hotels">Popular Hotels in Europe</a>
+                            <a href="#hotels">Hotel Deals of the Week</a>
+                        </div>
+                    </li>
+                    <li><a href="#booking">Flights</a></li>
+                    <li><a href="#deals">Vacations</a></li>
+                    <li><a href="#deals">Hot Deals</a></li>
+                    <li><a href="#blogs">Travel Guides</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="signupBtn">SIGN UP</button>
+                    <button id="accountBtn">MY ACCOUNT</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="assets/Paris Hilton Hotel.webp" alt="Luxury hotel with ocean view" class="hero-image">
+            <div class="hero-overlay">
+                <h1>Paris Hilton Hotel, Mumbai, India</h1>
+                <p>Experience luxury and comfort with breathtaking views, exceptional service and unforgettable stays.</p>
+                <div class="hero-price"><strong>$1200</strong> inclusive of food, dinner</div>
+            </div>
+        </section>
+
+        <section class="booking-section container" id="booking">
+            <div class="booking-heading">Book Your Trip</div>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-field">
+                    <label for="hotel">What?</label>
+                    <select id="hotel" required>
+                        <option value="">Select hotel</option>
+                        <option>Hotel</option>
+                        <option>Resort</option>
+                        <option>Villa</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="location">Where?</label>
+                    <select id="location" required>
+                        <option value="">Select location</option>
+                        <option>Mumbai, India</option>
+                        <option>Zurich, Switzerland</option>
+                        <option>Melbourne, Australia</option>
+                        <option>Maldives</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="checkin">When?</label>
+                    <input type="date" id="checkin" required>
+                </div>
+                <div class="form-field">
+                    <label for="checkout">Until?</label>
+                    <input type="date" id="checkout" required>
+                </div>
+                <div class="form-field">
+                    <label for="rooms">Rooms</label>
+                    <select id="rooms">
+                        <option>1 Room</option>
+                        <option>2 Rooms</option>
+                        <option>3 Rooms</option>
+                        <option>4 Rooms</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="adults">Adults</label>
+                    <select id="adults">
+                        <option>1 Adult</option>
+                        <option selected>2 Adults</option>
+                        <option>3 Adults</option>
+                        <option>4 Adults</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="children">Children</label>
+                    <select id="children">
+                        <option>0 Children</option>
+                        <option>1 Child</option>
+                        <option>2 Children</option>
+                        <option>3 Children</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-btn">SEARCH</button>
+            </form>
+            <p id="bookingMessage" class="booking-message" aria-live="polite"></p>
+        </section>
+
+        <section class="content-section container" id="hotels">
+            <div class="section-title">
+                <h2>Popular Hotels</h2>
+                <div class="carousel-controls">
+                    <button id="prevHotel" aria-label="Previous hotels">‹</button>
+                    <button id="nextHotel" aria-label="Next hotels">›</button>
+                </div>
+            </div>
+
+            <div class="hotel-grid" id="hotelGrid">
+                <article class="hotel-card">
+                    <img src="assets/Hotel Taj Mahal Palace.webp" alt="Hotel Taj Mahal Palace">
+                    <div class="hotel-info">
+                        <div><h3>Hotel Taj Mahal Palace</h3><p>Mumbai, India</p></div>
+                        <span class="price">$2000</span>
+                    </div>
+                </article>
+                <article class="hotel-card">
+                    <img src="assets/Mont Blanc.jpg" alt="Mont Blanc hotel and swimming pool">
+                    <div class="hotel-info">
+                        <div><h3>Mont Blanc</h3><p>Zurich, Switzerland</p></div>
+                        <span class="price">$3200</span>
+                    </div>
+                </article>
+                <article class="hotel-card">
+                    <img src="assets/Hotel Marriott.webp" alt="Hotel Marriott interior">
+                    <div class="hotel-info">
+                        <div><h3>Hotel Marriott</h3><p>Melbourne, Australia</p></div>
+                        <span class="price">$1200</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section deals-section container" id="deals">
+            <h2>Hot Deals</h2>
+            <div class="deals-grid">
+                <a href="#booking" class="deal-card">
+                    <img src="assets/PARIS EUROSTAR BREAKS.webp" alt="Paris Eurostar travel deal">
+                    <span class="deal-tag">SALE</span>
+                    <span class="deal-caption">PARIS EUROSTAR BREAKS</span>
+                </a>
+                <a href="#booking" class="deal-card">
+                    <img src="assets/TROPICAL ISLAND ESCAPES.webp" alt="Tropical island holiday deal">
+                    <span class="deal-tag">GIFT</span>
+                    <span class="deal-caption">EXCLUSIVE ISLAND GETAWAYS</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="blog-section container" id="blogs">
+            <h2>Latest Blogs</h2>
+            <a href="#blogs" class="blog-link">Best places to visit in India <span>→</span></a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Company</h3>
+                <a href="#footer">About the company</a>
+                <a href="#footer">Terms and Conditions</a>
+                <a href="#footer">Privacy Policy</a>
+                <a href="#footer">Careers</a>
+            </div>
+            <div>
+                <h3>Customer Support</h3>
+                <a href="#footer">Contact</a>
+                <a href="#footer">FAQ</a>
+            </div>
+            <div>
+                <h3>Follow us</h3>
+                <div class="social-links">
+                    <a href="#footer" aria-label="Facebook">f</a>
+                    <a href="#footer" aria-label="Twitter">𝕏</a>
+                    <a href="#footer" aria-label="LinkedIn">in</a>
+                    <a href="#footer" aria-label="Instagram">◎</a>
+                </div>
+            </div>
+            <div>
+                <h3>Don't miss our deals and offers</h3>
+                <form id="subscribeForm" class="subscribe-form">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+                <p id="subscribeMessage" aria-live="polite"></p>
+            </div>
         </div>
-      </div>
-      <div class="carousel-slide">
-        <img src="assets/Santorini Caldera Suites.jpg" alt="Santorini Caldera Suites" />
-        <div class="carousel-caption">
-          <h2>Santorini Caldera Suites</h2>
-          <p>Watch the world's most famous sunset from your private infinity pool.</p>
-          <span class="caption-price">₹189,500</span>
-          <span class="caption-note">Breakfast + sunset cruise included</span>
+        <div class="container copyright" id="footer">© 2026 BookMyTrip. All rights reserved.</div>
+    </footer>
+
+    <div class="modal" id="accountModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+            <h2 id="modalTitle">Welcome to BookMyTrip</h2>
+            <p>Sign in to manage your trips and hotel bookings.</p>
+            <form id="accountForm">
+                <input type="email" placeholder="Email address" required>
+                <input type="password" placeholder="Password" required minlength="4">
+                <button type="submit" class="search-btn">CONTINUE</button>
+            </form>
+            <p id="accountMessage" aria-live="polite"></p>
         </div>
-      </div>
     </div>
-    <button class="carousel-btn prev" aria-label="Previous slide"><i class="fa fa-chevron-left"></i></button>
-    <button class="carousel-btn next" aria-label="Next slide"><i class="fa fa-chevron-right"></i></button>
-    <div class="carousel-dots" id="carouselDots"></div>
-  </section>
 
-  <!-- ===== Book Your Trip ===== -->
-  <section class="search-section">
-    <div class="container">
-      <div class="search-panel">
-        <h2 class="section-title"><span>Book Your Trip</span></h2>
-        <form id="bookingForm">
-          <div class="search-grid">
-            <div class="form-group">
-              <label for="hotel">Hotel</label>
-              <select id="hotel" required>
-                <option value="">Select Hotel</option>
-                <option>Hotel Taj Mahal Palace</option>
-                <option>Mont Blanc</option>
-                <option>Hotel Marriott</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="location">Location</label>
-              <select id="location" required>
-                <option value="">Select Location</option>
-                <option>Mumbai, India</option>
-                <option>Zurich, Switzerland</option>
-                <option>Melbourne, Australia</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="checkin">Check-in</label>
-              <input type="date" id="checkin" required />
-            </div>
-            <div class="form-group">
-              <label for="checkout">Check-out</label>
-              <input type="date" id="checkout" required />
-            </div>
-            <div class="form-group">
-              <label for="rooms">Rooms</label>
-              <select id="rooms" required>
-                <option>1 Room</option>
-                <option>2 Rooms</option>
-                <option>3 Rooms</option>
-                <option>4 Rooms</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="adults">Adults</label>
-              <select id="adults" required>
-                <option>1 Adult</option>
-                <option>2 Adults</option>
-                <option>3 Adults</option>
-                <option>4 Adults</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="children">Children</label>
-              <select id="children" required>
-                <option>0 Children</option>
-                <option>1 Child</option>
-                <option>2 Children</option>
-                <option>3 Children</option>
-              </select>
-            </div>
-            <div class="form-group search-action">
-              <label>&nbsp;</label>
-              <button type="submit" class="btn-search"><i class="fa fa-search"></i> SEARCH</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Popular Hotels ===== -->
-  <section class="section hotels-section">
-    <div class="container">
-      <h2 class="section-title"><span>Popular Hotels</span></h2>
-      <div class="hotel-grid" id="hotelGrid">
-        <!-- Populated by JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Hot Deals ===== -->
-  <section class="section deals-section">
-    <div class="container">
-      <h2 class="section-title"><span>Hot Deals</span></h2>
-      <div class="deals-grid" id="dealsGrid">
-        <!-- Populated by JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Latest Blogs ===== -->
-  <section class="section blogs-section">
-    <div class="container">
-      <h2 class="section-title"><span>Latest Blogs</span></h2>
-      <div class="blog-list" id="blogList">
-        <!-- Populated by JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h3>Company</h3>
-        <a href="#">About Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms and Conditions</a>
-      </div>
-      <div class="footer-col">
-        <h3>Customer Support</h3>
-        <a href="#">Contact Us</a>
-        <a href="#">FAQ</a>
-      </div>
-      <div class="footer-col">
-        <h3>Follow Us</h3>
-        <a href="#" class="social-link"><i class="fa fa-facebook"></i> Facebook</a>
-        <a href="#" class="social-link"><i class="fa fa-instagram"></i> Instagram</a>
-        <a href="#" class="social-link"><i class="fa fa-youtube-play"></i> YouTube</a>
-      </div>
-      <div class="footer-col">
-        <h3>Deals and Offers</h3>
-        <form class="subscribe-form" id="subscribeForm">
-          <input type="email" id="subscribeEmail" placeholder="Enter your email" required />
-          <button type="submit" class="btn-subscribe"><i class="fa fa-envelope"></i> SUBSCRIBE</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; 2026 BookMyTrip Holidays. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
